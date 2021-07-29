@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        /*
+        正确的应该是 最外面可以用 vh vw，里面用%
+        极个别的 不追求 responsive 效果的 用px
+
+        */
+        body,
+        html {
+            height: 100%;
+        }
+
+        .parent {
+            background: lightblue;
+            height: 200px;
+            padding: 10px;
+            width: 50px;
+        }
+
+        .child {
+            background: pink;
+            height: 100%;
+            width: 2200px;
+            /*width: 2200px;*/
+        }
+
+
+
+
+        .parent2 {
+            background: orange;
+            float: left;
+            height: 2000px;
+            padding: 10px;
+            width: 50px;
+        }
+        .child2 {
+            background: lightcoral;
+            height: 100%;
+            width: 100vw;
+        }
+
+
+        .viewport-height {
+            background: gray;
+            float: right;
+            /*height: 100vh;*/
+            height: 100%;
+            width: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="parent">
+    <div class="child">
+        100% height, width: 2200px;
+        (parent: height 200px; width: 50px;)
+    </div>
+</div>
+<div class="parent2">
+    <div class="child2">
+         height: 100%; 100vw width
+        (parent: height: 2000px; width: 50px)
+    </div>
+</div>
+
+
+<div class="viewport-height">
+    100vh height
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+.sat-list-box {
+    border: 1px solid #ccc;
+    height: 380px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+/*这里的300也是 经过 scroll bar 测算过，不超过380的 高度*/
+.sat-list {
+    height: 300px;
+    overflow: scroll;
+}
+
+
+
+/*这个height 是根据 上面.sat-list-box 总高度 减去 button的height，得到的剩余高度，这样才好居中*/
+.spin-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 335px;
+}
+
