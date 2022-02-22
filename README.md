@@ -1,5 +1,4 @@
-# Starklink
-React JS based Starlink Trajectory Visualization 
+## React JS based Starlink Trajectory Visualization 
 --
 
 *	Designed and developed a visualization dashboard using ReactJS and D3 to track satellites in real-time based on geo-location.
